@@ -4,7 +4,7 @@ options = Options()
 #options.add_argument('--headless')
 #options.add_argument('--no-sandbox')
 #options.add_argument('--disable-dev-shm-usage')
-prefs = {'profile.default_content_settings.popups': 1, 'download.default_directory': 'd:\\'}
+prefs = {'profile.default_content_settings.popups': 1, 'download.default_directory': 'E:\\Django\\website\\selenium'}
 options.add_experimental_option('prefs', prefs)
 driver = webdriver.Chrome(executable_path="E:\Django\website\selenium\chromedriver.exe",chrome_options=options)
 driver.get('http://localhost:8000/student/dl')
