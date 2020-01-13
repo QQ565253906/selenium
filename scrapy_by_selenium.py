@@ -7,8 +7,10 @@ options = Options()
 prefs = {'profile.default_content_settings.popups': 1, 'download.default_directory': 'E:\\Django\\website\\selenium'}
 options.add_experimental_option('prefs', prefs)
 driver = webdriver.Chrome(executable_path="E:\Django\website\selenium\chromedriver.exe",chrome_options=options)
-driver.get('http://localhost:8000/student/dl')
-driver.find_element_by_link_text("download").click()
+# driver.get('http://localhost:8000/student/dl')
+driver.get('http://localhost:8000/student/login')
+
+#driver.find_element_by_link_text("download").click()
 
 # from selenium import webdriver # 从selenium导入webdriver
 # options = webdriver.ChromeOptions()
